@@ -5,6 +5,9 @@ contains the code to reproduce the results for the imagenet models; Link to arxi
 
 ![Alt text](git_readme_image/basketball_example_layer4.png)
 
+Example of using our method to explain why a ResNet50 model from pytorch model zoo predicts the class basketball. We extract the six main prototypes for the class basketball (shown in the left column). The middle column shows the same prototypes, but we only sample them from images where the model does not predict basketball (crucially to note, is that for the combined middle column image the model predicts basketball again). The last column shows the original images that the middle column images were cropped out of. They were predicted as ballon, racket, volleyball, volleyball, wooden spoon, rugby ball; But for the model, the combined image from crops of them is predicted as basketball. This works not only for basketball, but for 710 out of the 1000 of the classes.
+
+--------------------------------------
 
 example_notebook_component_pred_layer4.ipynb produces the first image with the basketball example shown in the paper.
 It creates the explanation using layer4.2 and also checks the model's prediction for that explanation
