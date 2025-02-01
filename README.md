@@ -3,9 +3,7 @@
 contains the code to reproduce the results for the imagenet models; Link to arxiv version of the paper is following shortly
 
 
-![alt text](https://github.com/rherdt185/concept-based-explanations-and-class-contrasting/tree/main/git_readme_image/basketball_example_layer4.png?raw=true)
-
-
+![Alt text](relative%20git_readme_image/basketball_example_layer4.png?raw=true "Title")
 
 
 example_notebook_component_pred_layer4.ipynb produces the first image with the basketball example shown in the paper.
